@@ -17,3 +17,8 @@ We will first load a black SpaCy english model. Then we will write a function wh
 Now we are going to prepare our data for training. We are disable all the pipeline components except ner. We are only going to train ner. We are going to train for 30 iterations.
  At each iteration, the training data is shuffled to ensure the model doesn't make any generalizations based on the order of examples. We are again going to read the training data. 
 Another technique to improve the learning results is to set a dropout rate, a rate at which to randomly "drop" individual features and representations. This makes it harder for the model to memorize the training data. We have added a dropout of 0.2 which means that each feature or internal representation has a 1/5 likelihood of being dropped.
+
+
+you can check medium article on this:
+
+https://akshay-bhor.medium.com/custom-trained-named-entity-recognizer-using-spacy-library-for-resume-data-extraction-d419cfd3fba0
